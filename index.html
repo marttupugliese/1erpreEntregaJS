@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Entrega - Preguntas</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>SIMPLE GAME</h1>
+        <p>Test your knowledge!</p>
+    </header>
+
+
+    <!-- preguntas -->
+    <div class="contenedor">
+        <section id="p0">
+            <h3>1 - ¿ Que cancion pertenece a Emilia Mernes ?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> Fantasy
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)"> Tuyo
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> Iconic
+            </label>
+        </section>
+        <section id="p1">
+            <h3>2 - ¿ Cual es el signo zodiacal de Marcelo Tinelli ?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> Aries
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> Leo
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> Cancer
+            </label>
+        </section>
+        <section id="p2">
+            <h3>3 - ¿ Como se llama el ritmo con mas tecnica en la danza ?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> Jazz
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> Danza Clasica
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)" > Contemporaneo
+            </label>
+        </section>
+        <section id="p3">
+            <h3>4 - ¿ Cuanto es 25 x 25 + 1000 ?</h3>
+            <label>
+                <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> 6.625
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> 1.625 
+            </label>
+            <label>
+                <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> 3.325
+            </label>
+        </section>
+        <section id="p4">
+            <h3>5 - ¿ Que pelicula diseny estreno en cine recientemente ?</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="respuesta(4,this)"> Lilo & Stich
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> Intensamente
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="respuesta(4,this)"> Moana
+            </label>
+        </section>
+
+        <button onclick="chequear()">CHEQUEAR</button>
+        <h2>Cantidad acertadas: <span id="resultado"></span></h2>
+    </div>
+
+<script src="./scripts/main.js"></script>
+</body>
+</html>
